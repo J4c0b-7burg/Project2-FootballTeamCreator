@@ -10,9 +10,9 @@ A fun app where you can create the ultimate football team, "THE REAL FOOTBALL".
 
 ### Wireframes
 
-![]
-![]
-![]
+![Index Page]
+![Show Page]
+![Create/edit Page]
 
 ### Daily Plan
 
