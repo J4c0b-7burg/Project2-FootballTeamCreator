@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs") %> 
+
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <main>
+        <div>
+            <form action="/players/<%= player._id %>?_method=PUT" method="post" >
+            
+                <fieldset>
+                    <legend>Edit a <%= player.name %></legend>
+                    <label>
+                        NAME: <input 
+                            type="text"
+                            name="name"
+                            value="<%= player.name %>"
+                            placeholder="enter a player name"
+                        />
+                    </label>
+                    <label>
+                        POSITION: <input 
+                            type="text"
+                            name="position"
+                            value="<%= player.position %>"
+                            placeholder="enter a position"
+                        />
+                    </label>
+                    <label>
+                        COUNTRY: <input 
+                            type="text"
+                            name="country"
+                            value="<%= player.country %>"
+                            placeholder="enter a country"
+                        />
+                    </label>
+                    <label>
+                        PACING: <input 
+                            type="text"
+                            name="PAC"
+                            value="<%= player.PAC %>"
+                            placeholder="enter pacing stat"
+                        />
+                    </label>
+                    <label>
+                        SHOOTING: <input 
+                            type="text"
+                            name="SHO"
+                            value="<%= player.SHO %>"
+                            placeholder="enter shooting stat"
+                        />
+                    </label>
+                    <label>
+                        PASSING: <input 
+                            type="text"
+                            name="PAS"
+                            value="<%= player.PAS %>"
+                            placeholder="enter passing stat"
+                        />
+                    </label>
+                    <label>
+                        DRIBBLING: <input 
+                            type="text"
+                            name="DRI"
+                            value="<%= player.DRI %>"
+                            placeholder="enter dribbling stat"
+                        />
+                    </label>
+                    <label>
+                        DEFENSE: <input 
+                            type="text"
+                            name="DEF"
+                            value="<%= player.DEF %>"
+                            placeholder="enter defense stat"
+                        />
+                    </label>
+                    <label>
+                        PHYSICAL: <input 
+                            type="text"
+                            name="PHY"
+                            value="<%= player.PHY %>"
+                            placeholder="enter PHY stat"
+                        />
+                    </label>
+                </fieldset>
+                <input type="submit" value="Update <%= player.name%>" />
+            </form> 
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+
+        <main>
+            <div>
+              <form action="/players" method="POST">
+                <fieldset>
+                    <legend>Create a new Player</legend>
+
+                    <label>
+                        NAME: <input type="text" name="name" placeholder="enter a player name" />
+                    </label>
+                    <label>
+                        POSITION: <input type="text" name="position" placeholder="enter a player position" />
+                    </label>
+                    <label>
+                        COUNTRY: <input type="text" name="country" placeholder="enter a player country" />
+                    </label>
+                    <label>
+                        PACING: <input type="text" name="PAC" placeholder="enter a player pacing stat" />
+                    </label>      
+                    <label>
+                        SHOOTING: <input type="text" name="SHO" placeholder="enter a player shooting stat" />
+                    </label>
+                    <label>
+                        PASSING: <input type="text" name="PAS" placeholder="enter a player passing stat" />
+                    </label>
+                    <label>
+                        DRIBBLING: <input type="text" name="DRI" placeholder="enter a player dribbling stat" />
+                    </label>
+                    <label>
+                        DEFENSE: <input type="text" name="DEF" placeholder="enter a player defense stat" />
+                    </label>
+                    <label>
+                        PHYSICAL: <input type="text" name="PHY" placeholder="enter a player physical stat" />
+                    </label>
+                </fieldset>
+                
+                <input type="submit" value="Create New Player" />
+              </form>        
+
+            </div>
+        </main>
+    </body>
+</html>

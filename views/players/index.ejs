@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+
+        <main>
+            <div>
+                <a href="/players/new"><button>Create New player</button></a>
+                <a href="/user/logout"><button>Logout</button></a>
+                <% for (player of players) { %>
+                    <article>
+                        <a href="/players/<%= player._id %>">
+                            <h2>
+                                <%= player.name %>
+                            </h2>
+                        </a>
+                        
+                    </article>
+
+                <% } %> 
+            </div>
+        </main>
+    </body>
+</html>
