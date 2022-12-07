@@ -2,6 +2,8 @@
 
 A fun app where you can create the ultimate football team, "THE REAL FOOTBALL".
 
+##Tech Used
+
 ### Frontend
 
 - EJS
