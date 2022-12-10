@@ -46,6 +46,15 @@ router.post("/", (req, res) => {
     });
 });
 
+//edit route
+router.get('/:id/edit', (req, res) => {
+
+  const id = req.params.id
+  Player.findById(id, (err, foundPlayer) => {
+      res.render('players/edit.ejs', { fruit: foundPlayer })
+  })
+})
+
 //update
 router.put('/:id', (req, res) => {
     Player.findByIdAndUpdate(req.params.id, req.body, {new: true},(err, updatedPlayer) => {
