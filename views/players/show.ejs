@@ -3,15 +3,15 @@
     <%- include('../partials/head.ejs') %>
 
     <body>
-        <%- include('../partials/header.ejs') %>
+        <link rel="stylesheet" type="text/css" href='/styles.css'/>
 
 
         <main>
             <div>
                     <article>
-                            <h2 class="name">
+                            <h1 class="name">
                                 <%= player.name %>
-                            </h2>
+                            </h1>
                             <h2 class="position">
                                 <%= player.position %>
                             </h2>
@@ -36,6 +36,7 @@
                             <h2 class="PHY">
                                 PHY: <%= player.PHY %>
                             </h2>
+                            <div class="StatsIMG"></div>
                             <a href="/players/<%= player._id %>/edit">
                                <button>Edit</button>
                             </a>

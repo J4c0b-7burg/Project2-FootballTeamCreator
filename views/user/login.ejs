@@ -3,7 +3,7 @@
   <%- include("../partials/head.ejs") %>
 
   <body>
-    <%- include("../partials/header.ejs") %>
+    <h1><font color='white'>Login to Your Account!</font></h1>
     <main>
       <div>
         <form action="/user/login" method="post">
@@ -20,5 +20,17 @@
         </form>
       </div>
     </main>
+    <style>
+      body{
+        background-image: url("https://images.unsplash.com/photo-1602472097151-72eeec7a3185?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+        background-size: cover;
+      }
+      h1{
+        text-align: center;
+      }
+      legend, label{
+        color: white;
+      }
+    </style>
   </body>
 </html>
