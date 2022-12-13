@@ -18,25 +18,27 @@
                             <h2 class="country">
                                 <%= player.country %>
                             </h2>
+                            <h2 id="OVR"></h2>
                             <h2 class="PAC">
-                                PAC: <%= player.PAC %>
+                                <%= player.PAC %> PAC
                             </h2>
                             <h2 class="SHO">
-                                SHO: <%= player.SHO %>
+                                <%= player.SHO %> SHO
                             </h2>
                             <h2 class="PAS">
-                                PAS: <%= player.PAS %>
+                                <%= player.PAS %> PAS
                             </h2>
                             <h2 class="DRI">
-                                DRI: <%= player.DRI %>
+                                <%= player.DRI %> DRI
                             </h2>
                             <h2 class="DEF">
-                                DEF: <%= player.DEF %>
+                                <%= player.DEF %> DEF
                             </h2>
                             <h2 class="PHY">
-                                PHY: <%= player.PHY %>
+                                <%= player.PHY %> PHY
                             </h2>
                             <div class="StatsIMG"></div>
+                            <div class="BLNKFace"></div>
                             <a href="/players/<%= player._id %>/edit">
                                <button>Edit</button>
                             </a>
@@ -50,5 +52,14 @@
 
             </div>
         </main>
+        <script defer>
+            let Array = parseInt[player.PAC, player.SHO, player.PAS, player.DRI, player.DEF, player.PHY]
+
+            let OVR = Array.reduce((a, b) => a + b, 0) / Array.reduce
+
+            console.log(OVR)
+            console.log(Array)
+            document.getElementById("OVR").innerHTML = OVR + "OVR";
+        </script>
     </body>
 </html>

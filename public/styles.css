@@ -6,20 +6,11 @@ button{
     color: white;
     background-color: rgb(7, 107, 107);
 }
-label{
+label, legend, h2, h1{
     color: white;
 }
 input{
     color: black;
-}
-legend{
-    color: white;
-}
-h2{
-    color: white;
-}
-h1{
-    color: white;
 }
 .StatsIMG{
     content: url('https://realfutcard.com/assets/img/previews/preview_gold2020.png');
@@ -29,4 +20,76 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 200px;
+    z-index:-2;
+}
+.BLNKFace{
+    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQClei1zmDpL79SkybWJsBu7XVfsARonWeW_g&usqp=CAU');
+    size: 25px 50px 25px 50px;
+    content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6%;
+    position: absolute;
+    left: 950px;
+    top: 368px;
+    z-index:-1;
+}
+.name{
+    color: black;
+    position: absolute;
+    left: 843px;
+    top: 475px;
+}
+.position{
+    color: black;
+    position: absolute;
+    left: 843px;
+    top: 315px;
+}
+.country{
+    color: black;
+    position: absolute;
+    left: 843px;
+    top: 360px;
+}
+.PAC{
+    color: black;
+    position: absolute;
+    left: 843px;
+    top: 525px;
+}
+.SHO{
+    color: black;
+    position: absolute;
+    left: 843px;
+    top: 560px;
+}
+.PAS{
+    color: black;
+    position: absolute;
+    left: 843px;
+    top: 590px;
+}
+.DRI{
+    color: black;
+    position: absolute;
+    left: 950px;
+    top: 525px;
+}
+.DEF{
+    color: black;
+    position: absolute;
+    left: 950px;
+    top: 560px;
+}
+.PHY{
+    color: black;
+    position: absolute;
+    left: 950px;
+    top: 590px;
 }
